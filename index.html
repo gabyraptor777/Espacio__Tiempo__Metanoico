@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>METAXXXVr</title>
+  <meta name="description" content="Textures - A-Frame School">
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+</head>
+
+<body>
+
+  <!-- animation__rotation="property: rotation; to: 360 0 360; loop: true; dur: 5000" -->
+  <a-scene inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+    <a-assets>
+      <img id="texture"  src="./img/metaaax.png">
+    </a-assets>
+    <!-- aquí se  gradua la velocidad animation ="dur: 100000 " -->
+    <a-box src="#texture" position="0 1 0.186" width="10" height="10" material="side:back"
+      geometry="depth:16.5;height:15.41;width:15.94" position="-1 1.6 -5" animation="property: rotation; to: 0 360 0; dur: 500; easing: linear; loop: true"></a-box>
+
+
+
+    <a-light type="ambient" color="#666"></a-light>
+    <a-light type="point" intensity="0.800" position="2 4 4"></a-light>
+  </a-scene>
+</body>
+
+
+
+<a-box src="#texture" position="0 1 0.186" width="10" height="10" material="side:back"
+  geometry="depth:16.5;height:15.41;width:15.94"></a-box>
+
+</html>
